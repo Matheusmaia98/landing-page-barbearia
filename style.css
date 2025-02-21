@@ -34,6 +34,10 @@
 
 }
 
+.video-mobile {
+    display: none;
+}
+
 .mascara {
     position: fixed;
     width: 100vw;
@@ -220,4 +224,28 @@ header section nav a:hover {
     background-color: rgba(0, 0, 0, 0.767)
 }
 
-@media screen and (min-width: 800px) and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+    
+    header section {
+        gap: 20px;
+        padding: 0.5rem 0;
+    }
+
+    header section nav a img {
+        height: 6rem;
+        width: 6rem;
+     }
+
+     header section nav a {
+        font-size: 1.4rem;
+     }
+     
+
+    .video-pc {
+        display: none;
+    }
+
+    .video-mobile {
+        display: block;
+    }
+}

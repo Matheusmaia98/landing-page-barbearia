@@ -11,14 +11,3 @@ function esconderModal() {
     mascara.style.visibility = 'hidden'
 }
 
-function trocarVideo() {
-    const video = document.querySelector('.video-pc');
-    const source = document.getElementById("video-source");
-    const largura = window.innerWidth;
-
-    if (largura <= 768) {
-        source.src = "videos/video-mobile.mp4";
-    } else {
-        source.src = "videos/barber-2.mp4"
-    }
-}
