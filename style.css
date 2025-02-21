@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    font-size: 10px;
+    --main-color: #2C2C2C;
+    --azul: #004E64;
+    --cinza: #D9D9D9;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+}
+
+.box-video {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-size: ;
+}
+
+.box-video video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+
+
+}
+
+.mascara {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(109deg, rgba(10, 12, 16, 0.87) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.87) 85%);
+    z-index: 0;
+}
+
+section {
+    padding: 3rem 4rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #242424;
+    z-index: 2;
+    border-bottom: 0.1rem solid #C9A227;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header section nav a img {
+   height: 8rem;
+   width: 8rem;
+}
+
+header section nav a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--cinza);
+    transition: 0.2s linear;
+}
+
+header section nav a:hover {
+    color: #C9A227;
+    border-bottom: 0.1rem solid #C9A227;
+    padding-bottom: 0.5rem;
+    font-size: 1.9rem;
+}
+
+.box-principal {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    & div {
+        max-width: 60rem;
+    }
+}
+
+.box-principal h3 {
+    color: #C9A227;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.box-principal p {
+    font-size: 2rem;
+    color: var(--cinza);
+    font-weight: lighter;
+    line-height: 3rem;
+    padding: 1rem 0;
+}
+
+.buttom-link {
+    background-color: #dab663;
+    cursor: pointer;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    text-transform: uppercase;
+    transition: 0.3s ;
+    
+}
+
+.box-principal a:hover {
+    background-color: #C9A227;
+    font-size: 1.8rem;
+    color: #2C2C2C;
+}
+
+.box-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sobre h2 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.box-sobre span {
+    color:  #C9A227;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    max-width: 900px;
+    background-color: #202020dc;
+    padding: 15px;
+    
+}
+
+.sobre-container img {
+    height: 50rem;
+    position: relative;
+    border-radius: px;
+    box-shadow: 0px 0px 4px  #E6C987;
+    
+}
+
+.sobre-texto h3{
+    font-size: 4rem;
+    color:  #C9A227;
+    padding-bottom: 20px;
+}
+
+.sobre-texto p {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    padding-bottom: 20px
+}
+
+.sobre-texto a:hover{
+    background-color: #C9A227;
+    font-size: 1.8rem;
+    color: #2C2C2C;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: transparent;
+    z-index: 5;
+    gap: 20px;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s linear ;
+
+    & h3 {
+        font-size: 3rem;
+        color: var(--cinza);
+        text-align: center;
+        border-bottom:  1px solid #ffcd27;
+
+        & span {
+            color: #C9A227;
+        }
+    }
+}
+
+.mascara-modal {
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.767)
+}

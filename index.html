@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barber Dev</title>
+</head>
+<body>
+    <div class="box-video">
+        <video src="videos/barber-2.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+    <header>
+        <section>
+            <nav>
+                <a href="#"><img src="img/logo-barbearia-2.png" alt=""></a>
+                <a href="#">Home</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+                <a href="#"  onclick="mostrarModal()">Localização</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="box-principal">
+        <div>
+            <h3>Eleve Seu Estilo. Sinta a Confiança.</h3>
+            <p>Aqui na Dev Barber, cada corte é uma experiência. Do clássico ao moderno, nosso time de barbeiros garante precisão, estilo e aquele atendimento de primeira. Agende seu horário e descubra o poder de um bom corte! </p>
+            <a class="buttom-link">Agende seu horário</a>
+        </div>
+    </section>
+
+    <section class="box-sobre">
+        <h2><span>Sobre</span> Nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="img/barber1.jpg" alt="barbeiro">
+            </div>
+
+            <div class="sobre-texto">
+                <h3>Mais que uma Barbearia, uma Experiência </h3>
+                <p>Não fazemos apenas cortes de cabelo e barba – criamos momentos. Nossa missão é oferecer um atendimento personalizado, com profissionais experientes, produtos de alta qualidade e um ambiente que combina conforto e estilo.</p>
+                <p>Aqui, cada detalhe é pensado para que você saia não só com um visual impecável, mas também com a sensação de estar no lugar certo. Vem viver essa experiência! </p>
+                <a class="buttom-link">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <h3><span>Nossa</span> Localização</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.4212278935584!2d-49.27014952495507!3d-16.705821446057545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef16579448935%3A0x8b0a189f456365d!2sBarbearia%20Vargas%20-%20Bueno!5e0!3m2!1spt-BR!2sbr!4v1740087830310!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
