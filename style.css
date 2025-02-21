@@ -224,7 +224,7 @@ header section nav a:hover {
     background-color: rgba(0, 0, 0, 0.767)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     
     header section {
         gap: 20px;
@@ -239,6 +239,48 @@ header section nav a:hover {
      header section nav a {
         font-size: 1.4rem;
      }
+
+     .box-principal {
+        & h3 {
+            font-size: 3rem;
+        }
+
+        & p {
+            font-size: 1.4rem;
+        }
+     }
+
+     .box-sobre h2 {
+        font-size: 3rem;
+     }
+
+     .sobre-container {
+        flex-direction: column-reverse;        
+        align-items: center;
+    }
+
+    .sobre-texto {
+        & h3 {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-size: 1.4rem;
+        }
+
+        & a {
+            ;
+        }
+    }
+
+    .sobre-imagem img {
+        height: 40rem;
+    }
+
+     .buttom-link {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+     }
      
 
     .video-pc {
@@ -247,5 +289,10 @@ header section nav a:hover {
 
     .video-mobile {
         display: block;
+    }
+
+    iframe {
+        width: 400px;
+        height: 300px;
     }
 }
